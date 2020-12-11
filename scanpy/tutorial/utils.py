@@ -173,8 +173,6 @@ def my_sparse_mean_var_minor_axis(
     minor_len,
     dtype
 ):
-    non_zero = indices.shape[0] # same as len(indices)?
-
     means = np.zeros(minor_len, dtype=dtype)
     variances = np.zeros_like(means, dtype=dtype)
 
